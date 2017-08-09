@@ -1,0 +1,6 @@
+{"i" : 3,
+"name" : "Woods",
+ "description" : "You entered the Woods. The East Bridge is now north(n)",
+ "neighbors" : {"n" : 1},
+ "objects" : ["Weird shaped tree", "Small rock"]
+}

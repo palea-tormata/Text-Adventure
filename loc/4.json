@@ -1,0 +1,6 @@
+{"i" : 4,
+ "name" : "Lake",
+ "description" : "You're in front of a Lake. The West Bridge is now east(e)",
+ "neighbors" : {"e" : 2},
+ "objects" : ["Old boat", "Duck"]
+}

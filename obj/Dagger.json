@@ -1,0 +1,4 @@
+{"name" : "Dagger",
+ "description" : "A somewhat sharp dagger",
+ "interact" : {"poke" : "You've cut yourself on a somewhat sharp dagger - Ouch!",
+               "take" : "You take the dagger with you - Let the adventure begin!"}}

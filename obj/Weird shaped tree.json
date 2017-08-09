@@ -1,0 +1,5 @@
+{"name" : "Weird shaped tree",
+ "description" : "A tree with curly shaped branches",
+ "interact" : {"poke" : "You hear a weird sound.. ",
+               "take" : "You try to snap one of the branches off.. Nothing happens.. "}
+}

@@ -1,0 +1,5 @@
+{"name" : "Small rock",
+ "description" : "Small, shiny.. is it really just a rock?",
+ "interact" : {"poke" : "You poke the small rock - it doesn't seem to mind to be poked",
+               "take" : "You take the small rock with you!"}
+}

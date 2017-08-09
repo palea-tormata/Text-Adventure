@@ -1,0 +1,5 @@
+{"name" : "Duck",
+ "description" : "A cute duck",
+ "interact" : {"poke" : "You can't poke a cute duck! Treat her to dinner first..",
+               "take" : "You can't take a cute duck with you! She's swimming far away from you.." }
+}  

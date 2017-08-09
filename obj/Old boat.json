@@ -1,0 +1,5 @@
+{"name" : "Old boat",
+ "description" : "Really old boat, you wonder how it's still above the water",
+ "interact" : {"poke" : "The boat starts to wobble, you don't feel safe to get inside..",
+               "take" : "Sure.. why don't you try to take the whole lake with you while you're at it!"}
+}

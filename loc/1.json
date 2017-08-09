@@ -1,0 +1,6 @@
+{"i" : 1,
+"name" : "East Bridge",
+ "description" : "You're standing on the East Bridge. The Castle(w) is behind you - in front you see the Woods(s)",
+ "neighbors" : {"w" : 0, "s" : 3},
+  "objects" : []
+}
