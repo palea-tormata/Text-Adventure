@@ -1,21 +1,20 @@
 import json
 import os
 
-def get_object(name, loc):
+def get_object(name):
     ret = None
     fileDir = os.path.dirname(os.path.realpath('__file__'))
     with open(fileDir + "/obj/" + str(name) + ".json", "r") as f:
         jsontext = f.read()
         d = json.loads(jsontext)
-        d['location'] = loc 
+        #d['location'] = loc 
         ret = Object(**d)
     return ret
 
 class Object():
-    def __init__(self, name="Location", description="", location = 0, interact = {}):
+    def __init__(self, name="Location", description="", interact = {}):
         self.name = name
         self.description = description
-        self.location = location
         self.interact = interact
     def _info(self):
         print(self.name + " -- " + self.description)

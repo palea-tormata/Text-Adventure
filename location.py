@@ -9,7 +9,7 @@ def get_location(i):
         jsontext = f.read()
         d = json.loads(jsontext)
         #replace name with an object class
-        d['objects'] = [get_object(o, i) for o in d['objects']]            
+        d['objects'] = [get_object(o) for o in d['objects']]            
         ret = Location(**d)
     return ret
 
@@ -34,5 +34,16 @@ class Location():
             for o in self.objects:
                 o._info()
 
-    def obj_in(self, obj):
-        return next((x for x in self.objects if str(obj) == x._name()), None)
+    def obj_in(self, obj_name):
+        return next((o for o in self.objects if str(obj_name) == o._name()), None)
+    
+    def rm_obj(self, obj):
+        self.objects.remove(obj)
+
+            
+        
+
+
+
+
+        

@@ -1,6 +1,5 @@
 import cmd
 from location import get_location
-from obj import get_object
 
 class Game(cmd.Cmd):
     def __init__(self):
@@ -8,6 +7,7 @@ class Game(cmd.Cmd):
         # start at Castle (0)
         self.location = get_location(0)
         self.look()
+        self.inventory = []
 
     def do_move(self, direction):
         newlocation = self.location._neighbor(direction)
@@ -39,10 +39,20 @@ class Game(cmd.Cmd):
     def do_take(self, obj):
         obj = self.location.obj_in(obj)
         if obj != None:
+            self.location.rm_obj(obj)
+            self.inventory.append(obj)
             print(obj.take())
         else:
             print("There is nothing to take here by that name..")
-    	
+
+    def do_i(self, args):
+        if not self.inventory:
+            print("You're not carrying anything at the moment")
+        else:
+            print("Inventory")
+            print("")
+            for o in self.inventory:
+                o._info()
 
 if __name__ == "__main__":
     g = Game()
